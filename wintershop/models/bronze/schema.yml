@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: Prod
+    tables:
+      - name: bronze
+        description: "Logs bruts du site wintershop, une ligne par événement, sans parsing"

@@ -1,0 +1,11 @@
+wintershop:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 10.18.72.79
+      user: postgres
+      password: monmotdepasse
+      port: 5432
+      dbname: postgres
+      schema: bramly   # ton schéma personnel
