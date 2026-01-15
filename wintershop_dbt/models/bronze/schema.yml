@@ -1,0 +1,5 @@
+sources:
+  - name: postgres_bronze
+    schema: Prod
+    tables:
+      - name: bronze

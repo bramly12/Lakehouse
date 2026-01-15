@@ -8,6 +8,7 @@ with source as (
 parsed as (
     select
         (regexp_matches(brut, '^(\S+)', ''))[1]                        as ip,
+        nullif((regexp_match(brut, '^\S+\s+-\s+(\S+)'))[1], '-')       as user_name,
         (regexp_matches(brut, '\[(.*?)\]', ''))[1]                     as log_datetime,
         (regexp_matches(brut, '"(\S+)', ''))[1]                        as method,
         (regexp_matches(brut, '"\S+ (\S+)', ''))[1]                    as path,

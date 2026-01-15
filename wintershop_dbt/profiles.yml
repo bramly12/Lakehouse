@@ -1,0 +1,43 @@
+wintershop_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: host.docker.internal      
+      user: postgres
+      password: monmotdepasse
+      port: 5432
+      dbname: postgres
+      schema: ahmed  
+      threads: 1
+
+    dev:
+      type: postgres
+      host: host.docker.internal      
+      user: postgres
+      password: monmotdepasse
+      port: 5432
+      dbname: postgres
+      schema: bramly  
+      threads: 2
+
+    dev:
+      type: postgres
+      host: host.docker.internal      
+      user: postgres
+      password: monmotdepasse
+      port: 5432
+      dbname: postgres
+      schema: souleymane  
+      threads: 3
+
+
+    prod:
+      type: postgres
+      host: host.docker.internal
+      user: postgres
+      password: monmotdepasse
+      port: 5432
+      dbname: postgres
+      schema: Prod        
+      threads: 4
